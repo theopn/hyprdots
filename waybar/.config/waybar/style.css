@@ -1,0 +1,106 @@
+* {
+  font-family: "ProggyClean Nerd Font";
+  font-size: 20px;
+  border-radius: 12px;
+}
+
+window#waybar {
+  background: rgba(46, 52, 64, 0.7);  /* Nord 0 (#2e3440) */
+  color: #eceff4;                     /* Nord 6 */
+}
+
+
+/* Modules - Left */
+
+
+#workspaces {
+  padding: 3px 3px;
+}
+
+#workspaces button {
+  padding: 0px 9px 0px 9px;
+  min-width: 1px;
+}
+
+#workspaces button.active {
+  color: #2e3440;
+  background-color: #eceff4;
+}
+
+#workspaces button.urgent {
+  background-color: #bf616a;    /* Nord 11 */
+}
+
+#window {
+  padding: 0px 10px 0px 10px;
+  margin : 3px 3px;
+}
+
+window#waybar.empty #window {
+  background-color: transparent;
+  color: transparent;
+}
+
+
+/* Modules - Center */
+
+#custom-dnd {
+  padding: 0px 5px;
+  margin : 3px 3px;
+}
+
+#clock {
+  padding: 0 5px;
+  margin : 3px 3px;
+}
+
+/* Modules - Right */
+
+#temperature, #cpu, #memory,
+#mpris, #pulseaudio,
+#backlight, #battery, #power-profiles-daemon, #idle_inhibitor,
+#tray
+{
+  margin: 1px 1px;
+  padding: 0 5px;
+}
+
+#mpris.playing{
+  background-color: #ebcb8b; /* Nord 13 */
+}
+
+#pulseaudio.muted {
+  color: #d8dee9 /* Nord 3 */
+}
+
+#battery.charging, #battery.plugged {
+  background-color: #bf616a;    /* Nord 11 */
+}
+
+#power-profiles-daemon.performance {
+  background-color: #bf616a;    /* Nord 11 */
+}
+
+#power-profiles-daemon.power-saver {
+  background-color: #a3be8c; /* Nord 14 */
+}
+
+#idle_inhibitor.activated{
+  background-color: #bf616a;    /* Nord 11 */
+}
+
+#keyboard-state {
+  color: #a3be8c; /* Nord 14 */
+}
+
+
+/* Tray */
+
+#tray > .passive {
+  -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
+  background-color: #bf616a;    /* Nord 11 */
+}
