@@ -1,3 +1,21 @@
+/* Nord Color Palette */
+@define-color color00 #2e3440;
+@define-color color01 #3b4252;
+@define-color color02 #434c5e;
+@define-color color03 #4c566a;
+@define-color color04 #d8dee9;
+@define-color color05 #e5e9f0;
+@define-color color06 #eceff4;
+@define-color color07 #8fbcbb;
+@define-color color08 #88c0d0;
+@define-color color09 #81a1c1;
+@define-color color10 #5e81ac;
+@define-color color11 #bf616a;
+@define-color color12 #d08770;
+@define-color color13 #ebcb8b;
+@define-color color14 #a3be8c;
+@define-color color15 #ba8baf;
+
 * {
   font-family: "ProggyClean Nerd Font";
   font-size: 20px;
@@ -5,8 +23,9 @@
 }
 
 window#waybar {
+  margin: 10px 10px;
   background: rgba(46, 52, 64, 0.7);  /* Nord 0 (#2e3440) */
-  color: #eceff4;                     /* Nord 6 */
+  color: @color06;
 }
 
 
@@ -24,11 +43,11 @@ window#waybar {
 
 #workspaces button.active {
   color: #2e3440;
-  background-color: #eceff4;
+  background-color: @color06;
 }
 
 #workspaces button.urgent {
-  background-color: #bf616a;    /* Nord 11 */
+  background-color: @color11;
 }
 
 #window {
@@ -66,31 +85,31 @@ window#waybar.empty #window {
 }
 
 #mpris.playing{
-  background-color: #ebcb8b; /* Nord 13 */
+  background-color: @color13;
 }
 
 #pulseaudio.muted {
-  color: #d8dee9 /* Nord 3 */
+  color: @color07
 }
 
 #battery.charging, #battery.plugged {
-  background-color: #bf616a;    /* Nord 11 */
+  background-color: @color11;
 }
 
 #power-profiles-daemon.performance {
-  background-color: #bf616a;    /* Nord 11 */
+  background-color: @color11;
 }
 
 #power-profiles-daemon.power-saver {
-  background-color: #a3be8c; /* Nord 14 */
+  background-color: @color14;
 }
 
 #idle_inhibitor.activated{
-  background-color: #bf616a;    /* Nord 11 */
+  background-color: @color11;
 }
 
 #keyboard-state {
-  color: #a3be8c; /* Nord 14 */
+  color: @color14;
 }
 
 
@@ -102,5 +121,5 @@ window#waybar.empty #window {
 
 #tray > .needs-attention {
   -gtk-icon-effect: highlight;
-  background-color: #bf616a;    /* Nord 11 */
+  background-color: @color11;
 }
