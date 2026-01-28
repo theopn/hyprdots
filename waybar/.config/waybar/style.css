@@ -18,7 +18,7 @@
 
 * {
   font-family: "ProggyClean Nerd Font";
-  font-size: 20px;
+  font-size: 18px;
   border-radius: 12px;
 }
 
@@ -90,6 +90,10 @@ window#waybar.empty #window {
 
 #pulseaudio.muted {
   color: @color07
+}
+
+#battery.warning, #battery.critical {
+  background-color: @color12;
 }
 
 #battery.charging, #battery.plugged {
