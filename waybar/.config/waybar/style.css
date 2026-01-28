@@ -24,13 +24,12 @@
 
 window#waybar {
   margin: 10px 10px;
-  background: rgba(46, 52, 64, 0.7);  /* Nord 0 (#2e3440) */
+  background: rgba(46, 52, 64, 0.7);  /* @color00 */
   color: @color06;
 }
 
 
 /* Modules - Left */
-
 
 #workspaces {
   padding: 3px 3px;
@@ -42,7 +41,7 @@ window#waybar {
 }
 
 #workspaces button.active {
-  color: #2e3440;
+  color: @color00;
   background-color: @color06;
 }
 
@@ -73,6 +72,7 @@ window#waybar.empty #window {
   margin : 3px 3px;
 }
 
+
 /* Modules - Right */
 
 #temperature, #cpu, #memory,
@@ -100,12 +100,20 @@ window#waybar.empty #window {
   background-color: @color11;
 }
 
+#power-profiles-daemon {
+  color: @color07;
+}
+
 #power-profiles-daemon.performance {
   background-color: @color11;
 }
 
 #power-profiles-daemon.power-saver {
   background-color: @color14;
+}
+
+#idle_inhibitor {
+  color: @color07;
 }
 
 #idle_inhibitor.activated{
