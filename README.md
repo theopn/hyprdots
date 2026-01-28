@@ -19,6 +19,18 @@ cd $HOME
 git@github.com:theopn/hyprdots.git
 cd hyprdots
 
-stow .
+stow hypr
+stow waybar
+```
+
+## XWayland and Fractional Scaling
+
+In my Framework 13 with 2.8k display, I use fractional scaling (1.67).
+Out of the box, XWayland application will be hard scaled, make it look pixelated.
+The workaround is to disable scaling for XWayland application and create the X11 config file (`~/.Xresources`) with the DPI value.
+
+```sh
+# 1.67 * 100
+echo "Xft.dpi: 167" > ~/.Xresources
 ```
 
