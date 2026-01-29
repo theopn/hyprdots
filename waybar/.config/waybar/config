@@ -8,18 +8,20 @@
 
     "modules-left": [
       "hyprland/workspaces",
+      "hyprland/windowcount",
       "hyprland/window",
     ],
 
     "modules-center": [
+      "hyprland/submap",
       "custom/dnd",
       "clock"
     ],
 
     "modules-right": [
       "cpu",
-      "memory",
       "temperature",
+      "memory",
       "mpris",
       "pulseaudio",
       "backlight",
@@ -37,6 +39,11 @@
       "format": "{name}",
     },
 
+    "hyprland/windowcount": {
+      "format": "󰨡 [{}]",
+      "format-empty": " ",
+    },
+
     "hyprland/window": {
       "format": "{title}",
       "max-length": 50,
@@ -45,6 +52,11 @@
 
 
     /* Modules - Center */
+
+    "hyprland/submap": {
+      "format": " {}",
+      "max-length": 8,
+    },
 
     /* TODO */
     "custom/dnd": {
@@ -66,14 +78,14 @@
     "cpu": {
       "interval": 15,
       "format": "{icon} {usage}%",
-      "format-icons": "󰍛",
+      "format-icons": "",
       "tooltip": false,
     },
 
     "memory": {
       "interval": 15,
       "format": "{icon} {percentage}%",
-      "format-icons": "",
+      "format-icons": "",
       "tooltip-format": "{used} used out of {total}",
     },
 
