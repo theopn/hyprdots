@@ -131,12 +131,18 @@ window#waybar.empty #window {
   background-color: @color11;
 }
 
-#keyboard-state {
+#keyboard-state label.locked {
+  padding: 0 5px;
   color: @color14;
 }
 
 
 /* Tray */
+
+#custom-seperator {
+  color: @color06;
+  padding: 1px 1px;
+}
 
 #tray > .passive {
   -gtk-icon-effect: dim;
