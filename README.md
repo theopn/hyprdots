@@ -21,6 +21,11 @@ cd hyprdots
 
 stow hypr
 stow waybar
+
+# Install hy3
+sudo dnf install cmake udis86 aquamarine-devel hyprland-devel
+hyprpm update
+hyprpm add https://github.com/outfoxxed/hy3
 ```
 
 ## XWayland and Fractional Scaling
