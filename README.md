@@ -11,7 +11,8 @@ Assumes Fedora because I am too old and tired and lazy to distro-hop anymore.
 # Official repository recommends solopasha/hyprland, but as of December 2025, it has been unmaintained
 sudo dnf copr enable sdegler/hyprland
 sudo dnf install hyprland
-sudo dnf install hyprpaper hyprlauncher hypridle hyprlock hyprsunset hyprpolkitagent hyprland-qt-support
+sudo dnf install hyprpaper hypridle hyprlock hyprsunset hyprpolkitagent hyprland-qt-support
+sudo dnf install dunst rofi waybar
 
 # if stow has not been installed
 sudo dnf install stow
@@ -20,6 +21,7 @@ git@github.com:theopn/hyprdots.git
 cd hyprdots
 
 stow hypr
+stow rofi
 stow waybar
 
 # Install hy3
