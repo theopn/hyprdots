@@ -1,9 +1,17 @@
 # Theo's Hyprland Config
 
 I swear I am not following the hype.
-Hyprland just has so many utilities in their "ecosystem," it is essentially a DE configured with text config.
+A couple reasons I am trying out Hyprland over Swayfx:
+
+1. I can disable fractional scaling for XWayland app only, which allows me to use `~/Xresources` or environment variable(s) to properly scale XWayland apps
+2. Utilities in "Hypr ecosystem" vary in quality, but I found most of them (`xdg-desktop-portal-hypr`, `hyprsunset`, `hyprlock`, etc.) to be great
+3. It is relatively painless to configure
 
 ## Installation
+
+> ![NOTE]
+> Some keymaps and functionality depends on the scripts from my [Haunted-Tiles](https://github.com/theopn/haunted-tiles) repository (my Sway config).
+> Make sure to clone the repository and copy the content in `scripts` folder to somewhere in your $PATH
 
 Assumes Fedora because I am too old and tired and lazy to distro-hop anymore.
 
