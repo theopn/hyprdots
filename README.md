@@ -9,7 +9,7 @@ A couple reasons I am trying out Hyprland over Swayfx:
 
 ## Installation
 
-> ![NOTE]
+> [!IMPORTANT]
 > Some keymaps and functionality depends on the scripts from my [Haunted-Tiles](https://github.com/theopn/haunted-tiles) repository (my Sway config).
 > Make sure to clone the repository and copy the content in `scripts` folder to somewhere in your $PATH
 
