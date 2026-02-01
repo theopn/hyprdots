@@ -39,6 +39,10 @@ stow rofi
 stow waybar
 ```
 
+## Usage
+
+Read [keybindings.conf](./hypr/.config/hypr/config/keybindings.conf).
+
 ## XWayland and Fractional Scaling
 
 In my Framework 13 with 2.8k display, I use fractional scaling (1.67).
