@@ -14,6 +14,11 @@ sudo dnf install hyprland
 sudo dnf install hyprpaper hypridle hyprlock hyprsunset hyprpolkitagent hyprland-qt-support
 sudo dnf install dunst rofi waybar
 
+# Install hy3
+sudo dnf install aquamarine-devel hyprland-devel
+hyprpm update
+hyprpm add https://github.com/outfoxxed/hy3
+
 # if stow has not been installed
 sudo dnf install stow
 cd $HOME
@@ -21,13 +26,9 @@ git@github.com:theopn/hyprdots.git
 cd hyprdots
 
 stow hypr
+stow dunst
 stow rofi
 stow waybar
-
-# Install hy3
-sudo dnf install cmake udis86 aquamarine-devel hyprland-devel
-hyprpm update
-hyprpm add https://github.com/outfoxxed/hy3
 ```
 
 ## XWayland and Fractional Scaling
