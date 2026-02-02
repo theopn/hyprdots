@@ -1,19 +1,29 @@
-# Theo's Hyprland Config
+# Theo's short-lived Hy3-based Hyprland Config
 
-I swear I am not following the hype.
-A couple reasons I am trying out Hyprland over Swayfx:
+![screenshot](./screenshot.png)
 
-1. I can disable fractional scaling for XWayland app only, which allows me to use `~/Xresources` or environment variable(s) to properly scale XWayland apps
-2. Utilities in "Hypr ecosystem" vary in quality, but I found most of them (`xdg-desktop-portal-hypr`, `hyprsunset`, `hyprlock`, etc.) to be great
+I fell for the hype and tried Hyprland for a week or two.
+
+A couple of reasons I was trying out Hyprland over Swayfx:
+
+1. Handles fractional scaling much better (by disabling hard scaling for XWayland apps entirely and using X11 native scaling like `~/.Xresources`)
+2. I liked some utilities in the "Hypr ecosystem" (especially `xdg-desktop-portal-hypr`, `hyprsunset`, and `hyprlock`)
 3. It is relatively painless to configure
+
+But two days later, I switched to [Niri](https://github.com/theopn/niriniri).
+
+1. Niri's solution of using XWayland-satellite is even better than Hyprland's XWayland support
+2. I can reuse pretty much all the tools I configured for Sway
+3. Hyprland's default tiling model was awful and pretty much required Hy3, whereas I really like Niri's scrollable model
+4. Fewer weird people in the community
+
+I enjoyed using it, maybe I will come back to it.
 
 ## Installation
 
 > [!IMPORTANT]
-> Some keymaps and functionality depends on the scripts from my [Haunted-Tiles](https://github.com/theopn/haunted-tiles) repository (my Sway config).
-> Make sure to clone the repository and copy the content in `scripts` folder to somewhere in your $PATH
-
-Assumes Fedora because I am too old and tired and lazy to distro-hop anymore.
+> Some keymaps and functionality depend on the scripts from my [Haunted-Tiles](https://github.com/theopn/haunted-tiles) repository (my Sway config).
+> Make sure to clone the repository and copy the content in the `scripts` directory to somewhere in your $PATH
 
 ```sh
 # Official repository recommends solopasha/hyprland, but as of December 2025, it has been unmaintained
@@ -45,9 +55,9 @@ Read [keybindings.conf](./hypr/.config/hypr/config/keybindings.conf).
 
 ## XWayland and Fractional Scaling
 
-In my Framework 13 with 2.8k display, I use fractional scaling (1.67).
-Out of the box, XWayland application will be hard scaled, make it look pixelated.
-The workaround is to disable scaling for XWayland application and create the X11 config file (`~/.Xresources`) with the DPI value.
+In my Framework 13 with the 2.8k display, I use fractional scaling (1.67).
+Out of the box, XWayland applications will be hard-scaled, making them look pixelated.
+The workaround is to disable scaling for XWayland applications and create the X11 config file (`~/.Xresources`) with the DPI value.
 
 ```sh
 # 1.67 * 100
